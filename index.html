@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>张三 - 个人主页</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+  <button id="night-mode-toggle" class="night-mode-toggle">
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <!-- 移除这一行 -->
+  <!-- <div class="background"></div> -->
+
+  <div id="progress-bar" class="progress-bar"></div>
+  <div id="welcome-popup" class="welcome-popup">
+    <p>欢迎访问我的个人主页！</p>
+  </div>
+  <div class="top-banner">
+    <h1 class="fade-in-text">欢迎来到我的个人主页</h1>
+  </div>
+  <header>
+    <nav class="glass">
+      <ul>
+        <li><a href="#home">首页</a></li>
+        <li><a href="#about">关于我</a></li>
+        <li><a href="#projects">项目</a></li>
+        <li><a href="#contact">联系方式</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="glass lazy-load">
+      <h1>张三</h1>
+      <p>全栈开发工程师 | 人工智能爱好者</p>
+    </section>
+
+    <section id="about" class="glass lazy-load">
+      <h2>关于我</h2>
+      <p>
+        我是一名充满激情的全栈开发工程师,拥有5年的工作经验。我擅长使用React、Node.js和Python进行web应用开发,同时对人工智能和机器学习领域有浓厚兴趣。在工作中,我注重代码质量和用户体验,致力于创造既美观又高效的数字产品。在空闲时间,我喜欢参与开源项目和技术社区活动,不断学习新技术并与他人分享知识。
+      </p>
+    </section>
+
+    <section id="projects" class="glass lazy-load">
+      <h2>项目展示</h2>
+      <div class="project-grid">
+        <div class="project">
+          <h3>智能家居控制系统</h3>
+          <p>使用React和Node.js开发的智能家居控制平台,集成了多种IoT设备。</p>
+        </div>
+        <div class="project">
+          <h3>在线教育平台</h3>
+          <p>基于Django的在线教育平台,支持视频课程、直播和在线测试。</p>
+        </div>
+        <div class="project">
+          <h3>AI图像识别应用</h3>
+          <p>使用TensorFlow和Flask开发的图像识别Web应用,可识别多种物体和场景。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="glass lazy-load">
+      <h2>技能树</h2>
+      <div id="skills-container" class="skills-container"></div>
+    </section>
+
+    <section id="contact" class="glass lazy-load">
+      <h2>联系方式</h2>
+      <form>
+        <input type="text" placeholder="姓名" required>
+        <input type="email" placeholder="电子邮件" required>
+        <textarea placeholder="消息" required></textarea>
+        <button type="submit">发送</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="glass">
+    <p>&copy; 2023 张三. 保留所有权利。</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+<div class="floating-contact">
+  <div class="social-links">
+    <a href="#" class="social-icon qq" title="QQ">
+      <i class="fab fa-qq"></i>
+    </a>
+    <a href="#" class="social-icon wechat" title="微信">
+      <i class="fab fa-weixin"></i>
+    </a>
+    <a href="#" class="social-icon github" title="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
+</div>
+
+</html>
